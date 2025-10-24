@@ -34,9 +34,6 @@ jobs:
         run: npm test -- --run
 
       - name: Build (Vite)
-        env:
-          # Uncomment BASE_OVERRIDE to force root deployment if you migrate to a user/organization page or custom domain.
-          # BASE_OVERRIDE: /
         run: npm run build
 
       - name: Upload artifact
@@ -54,4 +51,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
