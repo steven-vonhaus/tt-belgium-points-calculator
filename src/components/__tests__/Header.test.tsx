@@ -14,13 +14,13 @@ describe('Header', () => {
     it('should render the title', () => {
       render(<Header currentPoints="" onCurrentPointsChange={mockOnChange} />);
 
-      expect(screen.getByText('Calculateur de Classement Tennis de Table')).toBeInTheDocument();
+      expect(screen.getByText('Calculateur de Points AFTT')).toBeInTheDocument();
     });
 
     it('should render the season information', () => {
       render(<Header currentPoints="" onCurrentPointsChange={mockOnChange} />);
 
-      expect(screen.getByText('Saison 2025-2026 - Règlement AFTT')).toBeInTheDocument();
+      expect(screen.getByText('Saison 2025-2026')).toBeInTheDocument();
     });
 
     it('should render the current points input', () => {
@@ -84,7 +84,7 @@ describe('Header', () => {
       render(<Header currentPoints="" onCurrentPointsChange={mockOnChange} />);
 
       const heading = screen.getByRole('heading', { level: 1 });
-      expect(heading).toHaveTextContent('Calculateur de Classement Tennis de Table');
+      expect(heading).toHaveTextContent('Calculateur de Points AFTT');
     });
   });
 });

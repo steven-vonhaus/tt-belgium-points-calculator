@@ -23,8 +23,8 @@ const TableTennisRankingCalculator: React.FC = () => {
   const calculation = useCalculation(currentPoints, matches);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
-      <div className="max-w-5xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 sm:p-6">
+      <div className="max-w-5xl mx-auto space-y-6 sm:space-y-8">
         <Header currentPoints={currentPoints} onCurrentPointsChange={setCurrentPoints} />
 
         {calculation && <SummaryPanel calculation={calculation} />}
@@ -48,6 +48,3 @@ const TableTennisRankingCalculator: React.FC = () => {
 };
 
 export default TableTennisRankingCalculator;
-
-
-

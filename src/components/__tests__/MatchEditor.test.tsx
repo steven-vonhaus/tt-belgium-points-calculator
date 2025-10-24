@@ -335,7 +335,7 @@ describe('MatchEditor', () => {
         />
       );
 
-      const cancelButton = screen.getByLabelText('Annuler');
+      const cancelButton = screen.getByLabelText('Annuler la modification');
       expect(cancelButton).toBeInTheDocument();
     });
 

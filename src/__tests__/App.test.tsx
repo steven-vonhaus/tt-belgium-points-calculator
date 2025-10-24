@@ -8,7 +8,7 @@ describe('App Integration Tests', () => {
     it('should render the application', () => {
       render(<App />);
 
-      expect(screen.getByText('Calculateur de Classement Tennis de Table')).toBeInTheDocument();
+      expect(screen.getByText('Calculateur de Points AFTT')).toBeInTheDocument();
     });
 
     it('should render header with points input', () => {
